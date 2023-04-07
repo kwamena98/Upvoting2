@@ -55,7 +55,7 @@ const Transactions = () => {
 
 
     const { data, isLoading, refetch } = useQuery(["nfts"], () => {
-        return fetch("http://127.0.0.1:5000/all")
+        return fetch("http://7066-41-215-173-89.ngrok.io/all")
           .then((response) => {
             if (!response.ok) {
               throw new Error("Network response was not ok");
