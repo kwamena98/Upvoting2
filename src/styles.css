@@ -1,0 +1,70 @@
+.container {
+    display: flex;
+    background-image: url(./pexels-miguel-á-padriñán-1111369.jpg);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .flatlist {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  .card:hover {
+    background-color: #f9c2ff;
+  }
+  
+  .cardImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .cardTitle {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .favoriteButton {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #d1d1d1;
+    border-radius: 0 0 10px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .favoriteButton:hover {
+    background-color: #6e3b6e;
+    color: white;
+  }
+  
+  .favoriteButton.favorited {
+    background-color: #6e3b6e;
+    color: white;
+  }
+  
