@@ -13,7 +13,11 @@ const App = () => {
 
   return (
     <div className="App"> 
-    <AppContext.Provider value={{publicKey,setPublickey}}>
+     <QueryClientProvider client={queryClient}>
+     <Dashboard/>
+     </QueryClientProvider>
+   
+    {/* <AppContext.Provider value={{publicKey,setPublickey}}>
       <QueryClientProvider client={queryClient}>
       <Router>
       <Routes>
@@ -24,7 +28,7 @@ const App = () => {
     </Router>  
     </QueryClientProvider>
     </AppContext.Provider>
-    
+     */}
     </div>
 
   );
